@@ -1,0 +1,49 @@
+{
+    "name": "ner0tic/attribute-bundle",
+    "license": "MIT",
+    "type": "project",
+    "description": "generic attribute bundle.",
+    "authors": [
+        {
+            "name": "David Durost",
+            "homepage": "http://daviddurost.net"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "jquery/jquery",
+                "version": "2.1.0",
+                "dist": {
+                    "url": "http://code.jquery.com/jquery-2.1.0.min.js",
+                    "type": "file"
+                }
+            }
+        }
+    ],
+    "require": {
+        "php":                                  ">=5.4"
+    },
+    "require-dev": {
+
+    },
+    "config": {
+        "bin-dir": "bin",
+        "process-timeout": 20000
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "symfony-app-dir": "app",
+        "symfony-web-dir": "web",
+        "incenteev-parameters": {
+            "file": "app/config/parameters.yml"
+        }
+    },
+    "autoload": {
+        "psr-0": {
+            "Ner0tic\\Bundle": "Ner0tic/Bundle/",
+            "Ner0tic": "vendor/Ner0tic"
+        }
+    }
+}
